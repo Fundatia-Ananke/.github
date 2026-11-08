@@ -1,0 +1,22 @@
+name: Research
+description: Technical research or feasibility question
+type: Research
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Title: imperative verb + object + scope, 70 characters max, English, no `[Bug]` prefix. No client names or confidential details. Close through the PR with `Fixes #n`; one issue is about one PR and one day of work.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question to answer
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Expected output
+      placeholder: "One report comment, then close"
+    validations:
+      required: false

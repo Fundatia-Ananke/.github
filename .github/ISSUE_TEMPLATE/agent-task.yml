@@ -1,0 +1,22 @@
+name: Agent task
+description: Fully specified work for a coding agent
+type: Agent-task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Title: imperative verb + object + scope, 70 characters max, English, no `[Bug]` prefix. No client names or confidential details. Close through the PR with `Fixes #n`; one issue is about one PR and one day of work.
+  - type: textarea
+    id: spec
+    attributes:
+      label: Spec
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: accept
+    attributes:
+      label: Acceptance tests
+      placeholder: ""
+    validations:
+      required: true

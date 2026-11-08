@@ -1,0 +1,29 @@
+name: Bug
+description: Something behaves wrongly
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Title: imperative verb + object + scope, 70 characters max, English, no `[Bug]` prefix. No client names or confidential details. Close through the PR with `Fixes #n`; one issue is about one PR and one day of work.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: ""
+    validations:
+      required: false

@@ -1,0 +1,22 @@
+name: Spec
+description: A design to settle before implementation
+type: Spec
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Title: imperative verb + object + scope, 70 characters max, English, no `[Bug]` prefix. No client names or confidential details. Close through the PR with `Fixes #n`; one issue is about one PR and one day of work.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      placeholder: ""
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options and recommendation
+      placeholder: ""
+    validations:
+      required: true
